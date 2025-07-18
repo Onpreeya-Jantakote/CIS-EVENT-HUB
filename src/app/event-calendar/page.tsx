@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import Navbar from "@/app/components/layout/Navbar";
-import Sidebar from "@/app/components/layout/Sidebar";
-import CalendarView from "@/app/components/event-calendar/CalendarView";
-import EventList from "@/app/components/event-calendar/EventList";
-import { useStudentInfo, handleLogout } from "@/app/components/event-calendar/useStudentInfo";
+import Navbar from "@/components/layout/Navbar";
+import Sidebar from "@/components/layout/Sidebar";
+import CalendarView from "@/components/event-calendar/CalendarView";
+import EventList from "@/components/event-calendar/EventList";
+import { useStudentInfo, handleLogout } from "@/components/event-calendar/useStudentInfo";
 
 export default function EventCalendar() {
   const router = useRouter();

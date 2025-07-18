@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { auth, db } from "@/app/firebase/config";
+import { auth, db } from "@/firebase/config";
 import { doc, updateDoc } from "firebase/firestore";
 import { FaCamera } from "react-icons/fa";
 

@@ -2,11 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { auth, db } from "@/app/firebase/config";
+import { auth, db } from "@/firebase/config";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
-import UploadAvatar from "@/app/components/profile/UploadAvatar";
-import ProfileForm from "@/app/components/profile/ProfileForm";
+import UploadAvatar from "@/components/profile/UploadAvatar";
+import ProfileForm from "@/components/profile/ProfileForm";
 import { HiChevronLeft } from "react-icons/hi";
 
 interface Student {

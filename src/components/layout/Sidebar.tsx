@@ -3,6 +3,7 @@
 import React from "react";
 import { FaPen, FaUserCircle } from "react-icons/fa";
 import Link from "next/link";
+import { logout } from "@/lib/logout";
 
 interface MenuItem {
   id: number;
@@ -153,8 +154,8 @@ export default function Sidebar({
             </>
           ) : (
             <button
-              onClick={() => {
-                if (onLogout) onLogout();
+              onClick={async () => {
+                await logout();
                 onClose();
               }}
               className="border-2 border-red-500 text-red-500 py-2 px-6 rounded-full font-semibold hover:bg-red-500 hover:text-white transition"

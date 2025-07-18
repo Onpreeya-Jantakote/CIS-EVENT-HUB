@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Navbar from "@/app/components/layout/Navbar";
-import Sidebar from "@/app/components/layout/Sidebar";
-import CoverSection from "@/app/components/home/CoverSection";
-import WhatsNewsSection from "@/app/components/home/WhatsNewsSection";
-import EventSection from "@/app/components/home/EventSection";
-import { auth, db } from "@/app/firebase/config";
+import Navbar from "@/components/layout/Navbar";
+import Sidebar from "@/components/layout/Sidebar";
+import CoverSection from "@/components/home/CoverSection";
+import WhatsNewsSection from "@/components/home/WhatsNewsSection";
+import EventSection from "@/components/home/EventSection";
+import { auth, db } from "@/firebase/config";
 import { doc, getDoc } from "firebase/firestore";
 import {
   onAuthStateChanged,

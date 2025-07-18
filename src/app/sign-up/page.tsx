@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth, db } from "@/app/firebase/config";
+import { auth, db } from "@/firebase/config";
 import { useRouter } from "next/navigation";
 import { doc, setDoc } from "firebase/firestore";
 import {
@@ -10,7 +10,7 @@ import {
   validateAllFields,
   isFormComplete,
   getFieldErrorStyle,
-} from "@/app/utils/validation";
+} from "@/utils/validation";
 
 export default function SignUpPage() {
   const router = useRouter();
